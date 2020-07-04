@@ -1,0 +1,94 @@
+html,
+body {
+  margin: 0;
+  font-family: Noto Sans TC, 微軟正黑體;
+  height: 100% !important;
+  background-color: $color-background !important;
+  overflow-x: hidden;
+}
+
+#root {
+  height: 100% !important;
+  min-height: 100% !important;
+  font-family: Noto Sans TC, 微軟正黑體;
+  overflow-y: scroll;
+}
+
+.jas-container{
+  @include mobile{
+    padding: 0;
+  }
+}
+
+.w-80 {
+  width: 80% !important;
+}
+
+.remove-a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.jas-btn {
+  border: none;
+  padding: 0.45rem 0.5rem;
+  border-radius: 5px;
+  background-color: $color-blue;
+  color: white;
+  font-size: 0.85rem;
+  box-shadow: 1px 1px 3px 0 lightgray;
+  transition: all 0.1s;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: $color-blue-dark;
+  }
+
+  &-primary {
+    background-color: $color-blue;
+    &:hover {
+      background-color: $color-blue-dark;
+    }
+  }
+
+  &-secondary {
+    background-color: $color-gray;
+    color: $color-gray-dark;
+    &:hover {
+      background-color: $color-gray-dark;
+      color: white;
+    }
+  }
+
+  &-success {
+    background-color: $color-green;
+    &:hover {
+      background-color: $color-green-dark;
+    }
+  }
+}
+
+.jas-input {
+  outline: none;
+  border-style: solid;
+  border-color: $color-gray;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 0.3rem 0.5rem;
+  transition: all 0.2s;
+
+  &:focus {
+    border-color: $color-gray-dark;
+  }
+
+  &-danger {
+    border-color: $color-red;
+
+    &:focus {
+      border-color: $color-red-dark;
+    }
+  }
+}
